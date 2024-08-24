@@ -143,8 +143,6 @@ yearlyweeks = 52
 remaining_years = liveto-int(age)
 remaing_weeks = remaining_years*52
 x = remaing_weeks
-
-
 print(f"You have {x} weeks left.")
 
 ```
@@ -208,6 +206,9 @@ if  condition:
 else:
         output
 ```
+
+
+
 ### Tasks: odd/even
 Modulo == %
 performs division and outputs remainder
@@ -245,6 +246,8 @@ elif bmi <35:
 else:
     print(f"Your BMI is {bmi}, you are clinically obese.")
 ```
+
+
 ### tasks: Leap year
 ```python
 ## Which year do you want to check?
@@ -260,4 +263,33 @@ if year % 4 == 0:
         print("Leap year")
 else:
     print("Not leap year")
+```
+
+### Tasks: backend pizza bill
+
+```python
+size = input("What size pizza do you want? S, M, or L")
+add_pepperoni = input('Do you want pepperoni? Y or N')
+extra_cheese = input('Do you want extra cheese? Y or N')
+# 🚨 Don't change the code above 👆
+# Write your code below this line 👇
+bill = 0
+if size == "S":
+    bill += 15
+elif size == "M":
+    bill += 20
+else:
+    bill += 25
+
+if add_pepperoni == "Y":
+    if size == "S":
+        bill += 2
+    else:
+        bill += 3
+
+if extra_cheese == "Y":
+    bill += 1
+
+
+print(f"Thank you for choosing Python Pizza Deliveries! \nYour final bill is: ${bill}.")
 ```
